@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Christmas Gift</title>
+    <link rel="stylesheet" href="/gift.css">
+    <style>
+        :root {
+            --primary-color: #2C5530;
+            --accent-color: #D64045;
+            --background-color: #f5f5f5;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="theme-background" data-theme=""></div>
+    <div class="gift-container">
+        <canvas id="scratchCanvas"></canvas>
+        <div class="gift-content">
+            <div class="gift-inner">
+                <img id="giftImage" src="" alt="Gift Image">
+                <p id="giftMessage"></p>
+            </div>
+        </div>
+        <div class="instructions">
+            <div class="instruction-text">Scratch to reveal your gift!</div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/gift.js"></script>
+</body>
+</html> 
