@@ -25,15 +25,22 @@
       },
       {
         "src": "/script.js",
-        "dest": "/script.js"
+        "dest": "/public/script.js"
       },
       {
         "src": "/gift.js",
-        "dest": "/gift.js"
+        "dest": "/public/gift.js"
+      },
+      {
+        "handle": "filesystem"
+      },
+      {
+        "src": "/api/(.*)",
+        "dest": "/server.js"
       },
       {
         "src": "/(.*)",
-        "dest": "/server.js"
+        "dest": "/index.html"
       }
     ]
   }
