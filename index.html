@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Gift Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/themes.css">
+</head>
+<body>
+    <div class="container">
+        <div class="create-gift-section">
+            <h1>Create Gift</h1>
+            
+            <div class="gift-form">
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Write your message here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Add File</label>
+                    <div class="file-upload">
+                        <input type="file" id="fileInput" accept="image/*">
+                        <div class="upload-placeholder">Upload Image/File up to 100 MB</div>
+                    </div>
+                </div>
+
+                <div class="theme-selection">
+                    <label>Choose Theme</label>
+                    <div class="theme-options">
+                        <div class="theme-option" data-theme="sweater"></div>
+                        <div class="theme-option" data-theme="stars"></div>
+                        <div class="theme-option" data-theme="lights"></div>
+                        <div class="theme-option" data-theme="ribbon"></div>
+                    </div>
+                </div>
+
+                <button class="upload-btn">Upload</button>
+            </div>
+
+            <div class="gift-counter">
+                <p>Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🎄 Gift Created!</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Share this link with your loved ones:</p>
+                <div class="gift-link-container">
+                    <input type="text" id="giftLink" readonly>
+                    <button class="copy-link">
+                        <span class="copy-icon">📋</span>
+                        <span class="copy-text">Copy</span>
+                    </button>
+                </div>
+                <div class="share-buttons">
+                    <button class="share-btn whatsapp">
+                        Share on WhatsApp
+                    </button>
+                    <button class="share-btn email">
+                        Share via Email
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
